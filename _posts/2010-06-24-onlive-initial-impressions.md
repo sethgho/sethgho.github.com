@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'OnLive: Initial Impressions'
-
+comments: true
 ---
 
 <a href="http://www.sethgholson.com/wp-content/uploads/2010/06/onlive_logo.jpg"><img style="display: inline; margin-left: 0px; margin-right: 0px; border: 0px;" title="onlive_logo" src="http://www.sethgholson.com/wp-content/uploads/2010/06/onlive_logo_thumb.jpg" border="0" alt="onlive_logo" width="100" height="106" align="right" /></a>I’ve been following <a title="Onlive (not OnLINE)" href="http://www.onlive.com" target="_blank">OnLive</a> since it was first announced in March of 2009. The idea is straightforward: The OnLive app is just a video stream of a server. The server processes your  input, renders the video, and then sends it back to your screen. A few of the less technical people I’ve described the concept to didn’t quite “get it” at first. They didn’t catch the major and minor ways this would change gaming.

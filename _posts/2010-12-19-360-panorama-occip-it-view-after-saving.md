@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '360 Panorama - Occip.It View After Saving'
-
+comments: true
 ---
 
 <p style="text-align: center;">Per the comment thread on Occipital's blog:﻿<a href="http://www.sethgholson.com/wp-content/uploads/2010/12/Capture.png"><img class="aligncenter size-full wp-image-393" title="Occipital - Save after Uploading" src="http://www.sethgholson.com/wp-content/uploads/2010/12/Capture.png" alt="" width="498" height="69" /></a></p>

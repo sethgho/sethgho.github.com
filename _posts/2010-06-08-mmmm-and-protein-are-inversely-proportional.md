@@ -6,7 +6,7 @@ tags:
   - protein
   - steak
   - yogurt
-
+comments: true
 ---
 
 <img style="display: inline; margin: 3px; border: 0px initial initial;" title="Yoplait Greek Yogurt" src="http://www.sethgholson.com/wp-content/uploads/2010/06/GreekYogurt.png" border="0" alt="GreekYogurt" width="95" height="94" align="right" />

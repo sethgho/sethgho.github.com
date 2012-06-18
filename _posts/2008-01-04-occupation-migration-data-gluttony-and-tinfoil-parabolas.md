@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 'Occupation Migration, Data Gluttony, and Tinfoil Parabolas'
-
+published: false
+comments: true
 ---
 
 As is probably quite obvious, something’s been distracting me since August. No, it’s not the fatty from my previous post, but <a href="http://www.newtechsys.com">New Tech (Computer Systems?)</a>. Thanks for the recommendation, <a href="http://www.chrisbenard.net" target="_blank">Chris</a>, but I think I enjoyed it more at <a href="http://www.highlandclinic.com" target="_blank">Highland Clinic</a> where I was wholly unnecessary. Or not. Being necessary has been quite refreshing, but it’s caused me to neglect my personal tube in the interweb.

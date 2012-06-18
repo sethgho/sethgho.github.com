@@ -5,7 +5,7 @@ tags:
   - android
   - java
   - xml
-
+comments: true
 ---
 
 Today I wanted to display static a ListView of properties and their values. It’s Friday, so I really wanted to do this with as little work as possible. Android’s free layout simple_list_item_2 sounded like what I wanted, but it wasn’t immediately clear how to handle this. There are a lot of lazy ways we can list single values, but Googling around how to use simple_list_item_2 resulted in lots of questions with no real answer.

@@ -5,7 +5,7 @@ tags:
   - bash
   - javascript
   - node-js
-
+comments: true
 ---
 
 I’m amid migrating from a Dreamhost shared server to a VPS. A benefit of this is the ability to have long running processes like node.js. I’m also migrating the back end for <a title="Praaaaaaaaaaaaaise the Looooooooooord it's Tuesday! Wait... Damn. It's Tuesday." href="http://itunes.apple.com/us/app/menu-line-george/id440761181" target="_blank">Menu Line George</a> to Parse.com. My v1 process for recording the George calls was a kludge of scripts running on my home desktop to call via Skype. This was more a proof-of-concept than a long term solution. Now I’ll be using <a href="http://www.twilio.com" target="_blank">Twilio</a> + <a title="I can't stand the taste of V8." href="http://www.nodejs.org" target="_blank">node.js</a> + <a title="Most ungooglable product name ever." href="http://www.parse.com" target="_blank">Parse</a> as my permanent solution, significantly reducing how much I’ll need to think about it on a daily basis.

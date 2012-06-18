@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'XML Shredding In SQL Is A Recipe For Arthritis'
-
+comments: true
 ---
 
 At work I've been spending a lot of time the past couple of weeks doing the same thing: serialize the records in a table as XML, pass it up to the client, then back down to another database to be deserialized and merged. It's nothing fancy, but it's certainly tedious. It's generally been a pattern of:

@@ -5,7 +5,7 @@ tags:
   - infographic
   - iographica
   - mouse-path
-
+comments: true
 ---
 
 <a href="http://www.sethgholson.com/wp-content/uploads/2010/04/IOGraphica4.3hoursfrom818to13091.png"><img style="display: inline; border: 0px;" title="IOGraphica - 4.3 hours (from 8-18 to 13-09)" src="http://www.sethgholson.com/wp-content/uploads/2010/04/IOGraphica4.3hoursfrom818to1309_thumb1.png" border="0" alt="IOGraphica - 4.3 hours (from 8-18 to 13-09)" width="558" height="203" /></a>

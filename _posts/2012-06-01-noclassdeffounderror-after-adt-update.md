@@ -4,7 +4,7 @@ title: 'NoClassDefFoundError After ADT Update'
 tags:
   - adt
   - android
-
+comments: true
 ---
 
 <p>I’ve just returned to an Android project after a couple of months’ pause. After updating Eclipse and ADT, my project started throwing an exception:</p>  <pre class="brush:java">06-12 21:45:26.154: ERROR/AndroidRuntime(3654): java.lang.NoClassDefFoundError: com.google.gson.gson</pre>

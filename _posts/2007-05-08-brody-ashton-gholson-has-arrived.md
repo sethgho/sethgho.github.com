@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 'Brody Ashton Gholson has arrived!'
-
+published: false
+category: Personal
+comments: true
 ---
 
 Brody Ashton Gholson

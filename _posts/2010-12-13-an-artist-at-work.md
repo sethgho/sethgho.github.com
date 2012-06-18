@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'An artist at work!'
-
+comments: true
 ---
 
 <div class="pp_items">

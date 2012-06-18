@@ -1,0 +1,17 @@
+.gravatar {
+ 	float: left;	
+	margin: 0 10px 15px 0px;
+}
+.spacer {
+	clear: both;
+}
+
+#disqus_thread {
+	margin: 20px 0 0 0;
+}
+
+
+.content img {
+	margin: 0px 10px 10px 5px;
+	float: left;
+}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Berlin - All Panoramas'
-
+comments: true
 ---
 
 Because I didn’t want to include <em>all<strong> </strong></em>of the panoramas I took in my <a href="http://www.sethgholson.com/2010/12/berlin/">main Berlin summary post</a>, here is a list of nearly all of them for those that care:

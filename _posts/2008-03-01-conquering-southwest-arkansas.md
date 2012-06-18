@@ -1,11 +1,13 @@
 ---
 layout: post
 title: 'Conquering Southwest Arkansas'
+category: Outdoors
 tags:
   - backpacking
   - camping
   - vacation
-
+published: false
+comments: true
 ---
 
 [pictures were lost when recovering posts from old web server ]
