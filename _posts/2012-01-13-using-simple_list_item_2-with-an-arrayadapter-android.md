@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Using simple_list_item_2 with an ArrayAdapter (Android)'
+category: Coding
 tags:
   - android
   - java

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Restart Forever.js After Reboot'
+category: Coding
 tags:
   - bash
   - javascript

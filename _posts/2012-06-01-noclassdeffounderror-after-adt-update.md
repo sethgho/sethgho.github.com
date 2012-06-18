@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'NoClassDefFoundError After ADT Update'
+category: Coding
 tags:
   - adt
   - android

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'XML Shredding In SQL Is A Recipe For Arthritis'
+category: Coding
 tags:
   - xml
   - sql
