@@ -15,14 +15,9 @@ The simplest way I’ve found to keep a node script running as a service is <a t
 I fired it up yesterday and it worked like a champ. That is, of course, until my VPS rebooted overnight for some reason and the call wasn’t made this morning. I found a handy little guide over at Hack Sparrow for creating a cron job to restart your node script with forever when the machine reboots.
 
 First create a shell script like this one (I called mine <em>app-starter.sh</em>):
-<pre class="brush:plain">#!/bin/sh
 
-if [ $(ps aux | grep $USER | grep node | grep -v grep | wc -l | tr -s "\n") -eq 0 ]
-then
-        export NODE_ENV=production
-        export PATH=/usr/local/bin:$PATH
-        forever start ~/example/app.js &gt; /dev/null
-fi</pre>
+<script src="https://gist.github.com/37cc6850b0b2100de268.js"></script>
+
 Then make the script executable:
 <pre class="brush:plain">chmod 700 ~/app-starter.sh</pre>
 Now make cron run the script when the system is rebooted. Add this to your crontab (via <em>crontab –e</em>):

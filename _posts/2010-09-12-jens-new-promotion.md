@@ -2,6 +2,7 @@
 layout: post
 title: 'Jen’s New Promotion!'
 comments: true
+published: false
 ---
 
 <a href="http://www.sethgholson.com/wp-content/uploads/2010/09/Pic1.jpg"><img style="display: inline; border-width: 0px;" title="Pic 1" src="http://www.sethgholson.com/wp-content/uploads/2010/09/Pic1_thumb.jpg" border="0" alt="Pic 1" width="484" height="364" /></a>
