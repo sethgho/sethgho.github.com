@@ -9,9 +9,40 @@
 #disqus_thread {
 	margin: 20px 0 0 0;
 }
-
+/*
+#sharing {
+	clear: both;
+	display: inline;
+	vertical-align:bottom;
+	margin: 40px 0 0 0;
+	right: 0px;
+	height: 63px;
+}
+*/
+.twitter-share-button {
+	vertical-align:top;
+}
 
 .content img {
 	margin: 0px 10px 10px 5px;
 	float: left;
+}
+
+#fbframe {
+	height: 25px;
+	border:none; 
+	overflow:hidden; 
+	width:450px; 
+	height:63px;
+}
+
+.social_network {
+    position : relative;
+    list-style-type : none;
+	display: inline;
+}
+.social_network li {
+    float : left;
+    padding : 6px;
+    margin : 2px;
 }
