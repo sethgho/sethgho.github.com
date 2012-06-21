@@ -9,22 +9,23 @@
 #disqus_thread {
 	margin: 20px 0 0 0;
 }
-/*
-#sharing {
-	clear: both;
-	display: inline;
-	vertical-align:bottom;
-	margin: 40px 0 0 0;
-	right: 0px;
-	height: 63px;
-}
-*/
+
 .twitter-share-button {
 	vertical-align:top;
 }
 
 .content img {
-	margin: 0px 10px 10px 5px;
+	margin: 0px 10px 10px 10px;
+	float: left;
+}
+
+.content .img-right {
+	margin: 15px 0px 15px 15px;
+	float: right;
+}
+
+.content .img-left {
+	margin: 15px 15px 15px 0px;
 	float: left;
 }
 

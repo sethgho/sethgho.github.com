@@ -9,7 +9,7 @@ tags:
 comments: true
 ---
 
-<a href="/assets/img/onlive_logo.jpg"><img title="Onlive Logo" src="/assets/img/onlive_logo.jpg" border="0" alt="Onlive Logo" width="100" height="106" align="right" /></a>I’ve been following <a title="Onlive (not OnLINE)" href="http://www.onlive.com" target="_blank">OnLive</a> since it was first announced in March of 2009. The idea is straightforward: The OnLive app is just a video stream of a server. The server processes your  input, renders the video, and then sends it back to your screen. A few of the less technical people I’ve described the concept to didn’t quite “get it” at first. They didn’t catch the major and minor ways this would change gaming.
+<a href="/assets/img/onlive_logo.jpg"><img title="Onlive Logo" class="img-left" src="/assets/img/onlive_logo.jpg" border="0" alt="Onlive Logo" width="100" height="106" /></a>I’ve been following <a title="Onlive (not OnLINE)" href="http://www.onlive.com" target="_blank">OnLive</a> since it was first announced in March of 2009. The idea is straightforward: The OnLive app is just a video stream of a server. The server processes your  input, renders the video, and then sends it back to your screen. A few of the less technical people I’ve described the concept to didn’t quite “get it” at first. They didn’t catch the major and minor ways this would change gaming.
 
 <strong><h3>Why bother?</h3></strong>
 
@@ -21,7 +21,7 @@ Sure, I <em>do</em> have a gaming PC. I’m still interested. Regular PC upgrade
 
 Initially, I didn’t really catch how gaming via this technology would change the experience. Because they’re already streaming video to you, processing video has very little overhead. This really shines via their interface:
 
-<img style="float:right" title="Onlive Menu" src="/assets/img/onlive_menu.jpg" border="0" alt="onlive_menu" width="351" height="199" />
+<img class="img-right" title="Onlive Menu" src="/assets/img/onlive_menu.jpg" border="0" alt="onlive_menu" width="351" height="199" />
 
 Each one of those rectangles is an actual video. In theory, each one is also live video of someone playing. The reality is that right now some are prerecorded due to the limited user base, particularly before release when it was still in beta.
 
@@ -39,7 +39,7 @@ Yep, definitely laggy. I immediately noticed it. The time it took for the app to
 
 But the question is this: Does it matter? In a first person shooter, it could definitely matter. In the three games I played, it kind of mattered. After about 20-30 minutes of playing them, it didn’t matter. None of the problems mattered. I had the game running full screen, I was playing with my 360 controller, and<em> I was having fun</em>. I genuinely quit thinking about the technology and I was just playing the games (mostly Just Cause 2). I’m a relatively hardcore FPS player. I play to try some Unreal 3 and F.E.A.R. and see how much of a problem it is, but I will honestly be surprised if it’s not something I get used to pretty quickly.
 
-<img style="float:right" title="onlive" src="/assets/img/onlive_thumb.png" border="0" alt="onlive" width="393" height="211" />
+<img class="img-right" title="onlive" src="/assets/img/onlive_thumb.png" border="0" alt="onlive" width="393" height="211" />
 
 <strong><h3>How much?</h3></strong>
 
