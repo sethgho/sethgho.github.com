@@ -6,7 +6,7 @@ tags:
   - java
   - xml
 comments: true
-published: false
+published: true
 ---
 
 Trying to prettify an Android app with any kind of image assets has proven to be a bit of a challenge. I'm using the excellent [ActionBarSherlock](http://www.actionbarsherlock.com "I dont't get the name") to handle the ActionBar for OS versions prior to ICS. 
