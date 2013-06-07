@@ -5,8 +5,8 @@ layout: nil
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sethgholson.com</title>
-    <link>http://www.sethgholson.com/</link>
-    <atom:link href="http://sethgholson.com/feed" rel="self" type="application/rss+xml" />
+    <link>http://sethgho.github.io/</link>
+    <atom:link href="http://sethgho.github.io/feed" rel="self" type="application/rss+xml" />
     <description>Seth Gholson's Blog</description>
     <language>en-us</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
@@ -15,10 +15,10 @@ layout: nil
     {% for post in site.posts %}
     <item>
       <title>{{ post.title }}</title>
-      <link>http://sethgholson.com{{ post.url }}</link>
+      <link>http://sethgho.github.io/{{ post.url }}</link>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
       <author>sethgholson@sethgholson.com (Seth Gholson)</author>
-      <guid>http://sethgholson.com{{ post.id }}</guid>
+      <guid>http://sethgho.github.io{{ post.id }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}
