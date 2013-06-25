@@ -39,22 +39,23 @@ small {
 /* Brand & Navigation */
 .brand {
 	font-size: 1.9em;
-	color: #222;
-	font-weight: 300;
+	color: #fff;
+	font-weight: 100;
 	border-bottom: 1px solid #fff;
 	margin: 4px;
 }
 .brand span {
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .brand:hover {
-	color: #222;
 	text-decoration: none;
+	color: #eee;
 }
 
 .navbar-small {
 	background-color: #999999;
+	background-image: url('/assets/img/tweed_@2x.png');
 	font-size: 1.4em;
 	height: 40px;
 	display: none;
@@ -63,12 +64,14 @@ small {
 }
 
 .navbar-small a {
-	color: #222;	
+	color: #fff;	
 	font-weight: 200;
+	text-shadow: 2px 2px #222;
 }
 
 .navbar-small a:hover {
 	text-decoration: none;	
+	text-shadow: none;
 	color: #fff;
 }
 
@@ -92,13 +95,13 @@ small {
 
 .navbar {
 	background-color: #999999;
+	background-image: url('/assets/img/tweed_@2x.png');
 	float: left;
 	width: 220px;
 	padding: 6px 0 0 0;
 	border-right: 3px solid #CCC;
 	height: 100%;
 	position: fixed;
-
 }
 
 .navbar ul {
@@ -117,13 +120,14 @@ p  {
 .navbar ul a {
 	font-size: 1.6em;
 	color: #fff;
-	font-weight: 200;
-	text-shadow: 1px 1px #000;
+	font-weight: 200;	
 	text-decoration: none;
+	text-shadow: 2px 2px #000;
 }
 
 .navbar ul a:hover{
 	color:#eaeaea;
+	text-shadow: none;
 }
 
 .container {
@@ -150,11 +154,11 @@ article {
 }
 .social a:hover {
 	text-decoration: none;	
-	color: #fff;
+	color: #999;
 }
 
 
-@media (max-width:641px){
+@media (max-width:800px){
 	.navbar-small {
 		display: block;
 	}
