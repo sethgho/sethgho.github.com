@@ -1,5 +1,7 @@
 auto: true
 markdown: rdiscount
 pygments: true
+paginate: 5
+paginate_path: ":num"
 permalink: /:year/:month/:title
 url: http://www.sethgholson.com
