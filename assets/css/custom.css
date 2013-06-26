@@ -14,6 +14,13 @@ body {
 	font-size: 1.0em;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 a:hover {
 	color: #222;
 	text-decoration: underline;
@@ -21,11 +28,25 @@ a:hover {
 a {
 	color: #408892;
 	text-decoration: none;
-	font-weight: 500;
+	font-weight: 500;	
+	transition-property: color;
+	transition-duration: 1s;
+	-webkit-transition-property: color; /* Safari */
+	-webkit-transition-duration: 1s; /* Safari */
+	-moz-transition-property: color; /* Safari */
+	-moz-transition-duration: 1s; /* Safari */
 }
 
 h1 {
 	font-size: 1.6em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size 1.2em;
 }
 
 small {
@@ -42,10 +63,10 @@ small {
 	color: #fff;
 	font-weight: 100;
 	border-bottom: 1px solid #fff;
-	margin: 4px;
+	width: 100%;
 }
 .brand span {
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .brand:hover {
@@ -77,6 +98,7 @@ small {
 
 .navbar-small .gravatar {
 	float: left;
+	margin: 1px 1px 1px 10px;
 }
 .navicons {
 	text-align: center;
@@ -97,8 +119,8 @@ small {
 	background-color: #999999;
 	background-image: url('/assets/img/tweed_@2x.png');
 	float: left;
-	width: 220px;
-	padding: 6px 0 0 0;
+	width: 200px;
+	padding: 6px 0 0 16px;
 	border-right: 3px solid #CCC;
 	height: 100%;
 	position: fixed;
@@ -106,7 +128,7 @@ small {
 
 .navbar ul {
 	list-style-type: none;		
-	margin: 30px 16px 16px 16px;
+	margin: 30px 16px 16px 0px;
 }
 
 .navbar ul li {
@@ -131,7 +153,7 @@ p  {
 }
 
 .container {
-	margin: 0px 20px 40px 260px;
+	margin: 0px 20px 40px 240px;
 }
 
 article {
@@ -140,12 +162,15 @@ article {
 	border-bottom: 1px dotted #777;
 }
 
+article h1,h2,h3,h4,h5 {
+	margin-top: 20px;
+}
+
 .social {
 	position: absolute;
 	width: 100%;
-	bottom: 5px;
+	bottom: 0;
 	font-size: 2.5em;
-	text-align: center;
 	margin-bottom: 20px;
 }
 
