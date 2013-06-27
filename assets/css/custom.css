@@ -117,7 +117,7 @@ small {
 }
 
 .navbar {
-	background-color: #999999;
+	background-color: #666;
 	background-image: url('/assets/img/tweed_@2x.png');
 	float: left;
 	width: 200px;
@@ -170,7 +170,7 @@ article h1,h2,h3,h4,h5 {
 	width: 100%;
 	bottom: 0;
 	font-size: 2.5em;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .social a {
@@ -181,6 +181,9 @@ article h1,h2,h3,h4,h5 {
 	color: #999;
 }
 
+.footer {
+	clear: both;
+}
 
 @media (max-width:800px){
 	.navbar-small {
