@@ -59,14 +59,15 @@ small {
 
 /* Brand & Navigation */
 .brand {
-	font-size: 1.9em;
+	font-size: 2.4em;
 	color: #fff;
-	font-weight: 100;
+	font-weight: 200;
 	border-bottom: 1px solid #fff;
 	width: 100%;
+	line-height: 36px;
 }
 .brand span {
-	font-weight: 300;
+	font-weight: 400;	
 }
 
 .brand:hover {
@@ -136,7 +137,7 @@ small {
 }
 
 p  {
-	margin: 5px 0 5px 0;
+	margin: 4px 0 4px 0;
 }
 
 .navbar ul a {
@@ -144,12 +145,10 @@ p  {
 	color: #fff;
 	font-weight: 200;	
 	text-decoration: none;
-	text-shadow: 2px 2px #000;
 }
 
 .navbar ul a:hover{
-	color:#eaeaea;
-	text-shadow: none;
+	color:#bbb;
 }
 
 .container {
