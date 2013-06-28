@@ -18,6 +18,9 @@ body {
 	line-height: 1.2;
 	font-size: 1.0em;
 }
+.post-meta-google-authorship {
+	display: none;
+}
 
 .preload * {
   -webkit-transition: none !important;
