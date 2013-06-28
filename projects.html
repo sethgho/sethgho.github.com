@@ -3,24 +3,24 @@ layout: default
 title: "Seth Gholson"
 ---
 
-<h1>MENU LINE GEORGE </h1>
+<h1>MENU LINE GEORGE </h1><span>http://www.sethgholson.com/george</span>
 
 <a href="/assets/img/george_devices.png" style="float: right; margin: 10px;"><img src="/assets/img/george_devices_thumb.png"/></a>
-<p style="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in enim nec nunc condimentum accumsan. Aliquam eget dui massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam at cursus ligula. Mauris mollis ornare leo et dictum. Sed id neque eu eros ultricies rutrum. Quisque congue arcu et urna elementum vulputate ac non risus. Morbi id sodales leo. Nulla facilisi. Vivamus sed adipiscing erat. Proin posuere pretium ultricies. Ut consequat turpis sit amet auctor hendrerit.</p>
+<p style="">My home town of Shreveport, LA has a very unique cafeteria. <a href="http://christushealthsb.org/">Christus Schumpert Hospital</a>'s daily phone-in cafeteria menu is nearly always narrated by Cafeteria Team Leader George Cauthen. This isn't your ordinary hospital cafeteria menu, however. George adds a southern evangelical flair to his recording that must be heard to understand. I was first introduced to this when I worked in IT for a clinic on the Christus Schumpert campus. George has dished out some fantastic sound bytes over the years, but once the day is over they're gone forever. Needing a quick and simple project to explore iOS development I could complete while on paternity leave (because newborns are a breeze, right?), preserving these calls seemed like a great little project. The three main hurdles were:
 <ul>
-	<li>Calling and recording</li>
-	<li>Administration</li>
-	<li>Clients</li>
-</ul>	
+	<li>Calling</li>
+	<li>Managing</li>
+	<li>Apps</li>
+</ul></p>	
 
 <h2>CALLING AND RECORDING</h2>
-<p>Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas id varius dolor, quis egestas elit. Nullam iaculis est augue, at venenatis quam egestas non. Nunc dictum quis justo tincidunt viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec laoreet in diam quis hendrerit. Quisque in ullamcorper augue, eget sagittis erat. Nunc at purus volutpat, mollis massa a, adipiscing massa. Donec consequat, quam at accumsan porta, dui velit semper purus, ut mattis justo metus nec libero.</p>
+<p>After a few different iterations using a couple of different languages and APIS, I'm currently running a <a href="http://nodejs.org/">node.js</a> app on a <a href="http://www.raspberrypi.org/">Raspberry Pi</a> employing <a href="http://twilio.com/">Twilio</a> to initiate and record the calls. Twilio lets me download the file in MP3 format, which is passed up to <a href="https://parse.com/">Parse</a>.</p>
 
 <a href="/assets/img/george_admin_ss.png" style="float: left; margin: 10px;"><img src="/assets/img/george_admin_ss_thumb.png"/></a>
 <h2>ADMINISTRATION</h2>
-<p>Nunc eu est feugiat, posuere erat eget, tincidunt elit. Vivamus eget enim eros. Aenean faucibus, sapien molestie vehicula dapibus, arcu justo convallis lectus, ut ornare ipsum massa congue ipsum. Morbi ullamcorper magna odio, sed fermentum ipsum viverra nec. Etiam quis dui consectetur, venenatis nulla bibendum, interdum mauris. Suspendisse faucibus auctor dapibus. In ut leo tempor, feugiat quam ac, pulvinar sapien. Nunc consequat sem nec erat consequat adipiscing.</p>
+<p>Because I'm using Parse for my back end, I require no server side code. Using their Javascript SDK, I created a web app to manage these recording. <a href="http://backbonejs.org/">Backbone.js</a> allowed me to us a simple MVC pattern. <a href="http://twitter.github.io/bootstrap/">Bootstrap</a> gave me a grid system and some halfway decent standardized controls.</p>
 
 <h2>CLIENTS</h2>
-<p>Donec consequat sem lectus, sit amet consequat lacus posuere tristique. Ut gravida sapien eget hendrerit ornare. Maecenas vel lacus sit amet urna iaculis pulvinar. Aliquam id bibendum augue. Sed viverra consequat ipsum sit amet consequat. Ut gravida elit a tempus pharetra. Pellentesque elementum mattis erat ut ullamcorper. Nullam imperdiet at felis quis consectetur. Suspendisse dapibus convallis est et tempor. Nunc vel elit sagittis, interdum sem at, condimentum odio. Nunc orci sem, imperdiet vel mollis quis, ultrices sed nunc. Donec lectus mi, interdum mattis accumsan a, gravida vel magna. Suspendisse dapibus varius pharetra. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p>My first verison of the <a href="https://itunes.apple.com/us/app/menu-line-george/id440761181?mt=8">iOS app</a> was created using the <a href="http://www.appcelerator.com/platform/titanium-platform/" title="AWFUL">Titanium Mobile</a>. Using a cross platform framework like this was a wrong decision. Versions 2.x and 3.x were rewritten in Objective-C.</p>
 
-<p>Maecenas vitae eros eros. In malesuada lacus non volutpat venenatis. Mauris dui odio, gravida eget diam a, sodales sollicitudin dui. In ut mollis augue. Etiam semper, nisl nec luctus vestibulum, nibh risus sodales nulla, nec auctor erat nunc a massa. Etiam magna tortor, luctus ac mi a, dignissim mattis mauris. Proin eu congue dolor. Sed tempor tortor in lorem iaculis sollicitudin sit amet sit amet lectus. Vivamus malesuada mattis faucibus. Nam a feugiat sapien. Vestibulum in ullamcorper nulla. Praesent auctor eget lorem eu porta.</p>
+<p>The Android client is targeting 2.3.x (Gingerbread)+ using the native Java SDK. Currently still in development, it should be completed and available in Google Play relatively soon. </p>

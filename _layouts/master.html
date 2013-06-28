@@ -11,13 +11,19 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<link rel="shortcut icon" href="http://www.gravatar.com/avatar/d704ea2a2f1bb79d9719b451505e7b3d?s=16">   
   </head>
-  <body class="preload">
-	{% include navigation.html %}  
+  <body class="preload">    
+	
+    {% include navigation.html %}  
+
+    <!-- Begin Content -->
 	<section class="container">	
 		{{ content }}
 		<div id="disqus_thread"></div>		
 		{% include footer.html %} 
 	</section>
+    <!-- End Content -->
+
+    <!-- js -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>    
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=desert"></script>
 	<script src="/assets/js/custom.js" type="text/javascript"></script>	

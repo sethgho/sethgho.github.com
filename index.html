@@ -2,10 +2,8 @@
 layout: default
 title: "Seth Gholson"
 ---
-<ul class="">
 	{% for post in paginator.posts %}	
-    <li>
-      <article>
+  <article>
 		  	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
           	<i>{{ post.summary }}</i>
   			<p class="author">
@@ -14,22 +12,23 @@ title: "Seth Gholson"
   			<div class="content">
     			{{ post.content }}
   			</div> 
-	  </article>
-    </li>
+        <div class="comment_link">
+          <i class="icon-comment"></i> <a href="http://sethgholson.com/{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
+        </div>
+  </article>
 	{% endfor %}
-</ul>
 
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="/{{ if if paginator.page == 2 'index.html' else paginator.previous_page }}" class="previous">Previous</a>
+    <a href="/{{ if if paginator.page == 2 'index.html' else paginator.previous_page }}" class="previous">PREVIOUS</a>
   {% else %}
-    <span class="previous">Previous</span>
+    <!-- <span class="previous">PREVIOUS</span> -->
   {% endif %}
   <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a href="/{{ paginator.next_page }}" class="next">Next</a>
+    <a href="/{{ paginator.next_page }}" class="next">NEXT</a>
   {% else %}
-    <span class="next ">Next</span>
+    <!-- <span class="next">NEXT</span> -->
   {% endif %}
 </div>

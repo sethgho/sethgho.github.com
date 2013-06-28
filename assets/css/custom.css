@@ -1,16 +1,21 @@
 /* Reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,li,fieldset,ol,ul,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}ul,ol{list-style-type: none}
-pre ul,ol {
-	list-style-type: decimal;	
+ul,ol {
+	list-style-type: inherit;	
+	list-style-position: inside;
 }
 pre {
 	font-family: monospace;
+	padding: 10px;
+	margin-bottom: 16px;
 }
 /* Base */
 body {
 	font-family: 'Roboto', Helvetica, sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 	font-weight: 400;
-	line-height: 140%;
+	line-height: 1.2;
 	font-size: 1.0em;
 }
 
@@ -23,31 +28,26 @@ body {
 
 a:hover {
 	color: #222;
-	text-decoration: underline;
+	text-decoration: underline;	
 }
 a {
 	color: #408892;
 	text-decoration: none;
 	font-weight: 500;	
+	line-height: 110%;
 	transition-property: color;
-	transition-duration: 1s;
+	transition-duration: .3s;
 	-webkit-transition-property: color; /* Safari */
-	-webkit-transition-duration: 1s; /* Safari */
+	-webkit-transition-duration: .3s; /* Safari */
 	-moz-transition-property: color; /* Safari */
-	-moz-transition-duration: 1s; /* Safari */
+	-moz-transition-duration: .3s; /* Safari */
 }
 
-h1 {
-	font-size: 1.6em;
-}
-
-h2 {
-	font-size: 1.4em;
-}
-
-h3 {
-	font-size 1.2em;
-}
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
 
 small {
 	font-size: .8em;
@@ -61,13 +61,12 @@ small {
 .brand {
 	font-size: 2.4em;
 	color: #fff;
-	font-weight: 200;
-	border-bottom: 1px solid #fff;
+	font-weight: 200;	
 	width: 100%;
-	line-height: 36px;
 }
 .brand span {
 	font-weight: 400;	
+	border-bottom: 1px solid #fff;
 }
 
 .brand:hover {
@@ -75,20 +74,9 @@ small {
 	color: #eee;
 }
 
-.navbar-small {
-	background-color: #999999;
-	background-image: url('/assets/img/tweed_@2x.png');
-	font-size: 1.4em;
-	height: 40px;
-	display: none;
-	padding-top: 2px;
-	position: relative;
-}
-
 .navbar-small a {
 	color: #fff;	
 	font-weight: 200;
-	text-shadow: 2px 2px #222;
 }
 
 .navbar-small a:hover {
@@ -116,15 +104,26 @@ small {
     margin: auto;
 }
 
-.navbar {
+nav {
 	background-color: #666;
 	background-image: url('/assets/img/tweed_@2x.png');
+}
+.navbar {
+	
 	float: left;
 	width: 200px;
 	padding: 6px 0 0 16px;
 	border-right: 3px solid #CCC;
 	height: 100%;
 	position: fixed;
+}
+
+.navbar-small {	
+	font-size: 1.4em;
+	height: 40px;
+	display: none;
+	padding-top: 2px;
+	position: relative;
 }
 
 .navbar ul {
@@ -137,7 +136,8 @@ small {
 }
 
 p  {
-	margin: 4px 0 4px 0;
+	margin: 4px 0 16px 0;
+	line-height: 1.4em;
 }
 
 .navbar ul a {
@@ -153,16 +153,13 @@ p  {
 
 .container {
 	margin: 0px 20px 40px 240px;
+	padding-top: 6px;
 }
 
 article {
-	padding: 10px 0 30px 0;
+	padding: 10px 0 0px 0;
 	margin-bottom: 60px;
 	border-bottom: 1px dotted #777;
-}
-
-article h1,h2,h3,h4,h5 {
-	margin-top: 20px;
 }
 
 .social {
@@ -185,6 +182,26 @@ article h1,h2,h3,h4,h5 {
 	clear: both;
 }
 
+.pagination {
+	text-align: center;
+}
+
+.pagination .previous {
+	float: left;
+}
+
+.pagination .next {
+	float: right;
+}
+
+.pagination .page_number {
+	margin: 0 auto;
+}
+
+.comment_link {
+	margin: 6px 0 6px 0;
+}
+
 @media (max-width:800px){
 	.navbar-small {
 		display: block;
@@ -195,6 +212,19 @@ article h1,h2,h3,h4,h5 {
 	}
 	.container {
 		margin: 0px 20px 40px 20px;
+	}
+
+	.pagination .page_number {
+		display: none;
+	}
+
+	.previous, .next {
+		font-size: 1.3em;
+	}
+
+	.footer {
+		font-size: .8em;
+		text-align: center;
 	}
 }
 
