@@ -11,6 +11,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="author" content="Seth Gholson, sethgho@gmail.com">
     <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Facebook -->
     <meta property="og:title" content="Home Page" />
     <meta property="og:site_name" content="Seth Gholson" />
     <meta property="og:type" content="blog" />
@@ -20,7 +22,14 @@
     <meta name="description" content="The personal blog of Austin, TX based .NET and mobile developer Seth Gholson" />
     <meta property="og:description" content="The personal blog of Austin, TX based .NET and mobile developer Seth Gholson" />
     <meta itemprop="description" content="The personal blog of Austin, TX based .NET and mobile developer Seth Gholson" />
-
+    <meta name="application-name" content="Seth Gholson"/>
+    
+    <!-- Windows 8/Phone Stuff (rofl) -->
+    <meta name="msapplication-TileColor" content="#000000"/>
+    <meta name="msapplication-square70x70logo" content="tiny.png"/>
+    <meta name="msapplication-square150x150logo" content="square.png"/>
+    <meta name="msapplication-wide310x150logo" content="wide.png"/>
+    <meta name="msapplication-square310x310logo" content="large.png"/>
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://sethgholson.com/feed" />
 
     <link href="/assets/css/custom.css" rel="stylesheet">
@@ -34,7 +43,7 @@
     {% include navigation.html %}  
 
     <!-- Begin Content -->
-	<section class="container">	
+	<section class="container" role="main">	
 		{{ content }}
 		<div id="disqus_thread"></div>		
 		{% include footer.html %} 
