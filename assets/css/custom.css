@@ -8,6 +8,7 @@ pre {
 	font-family: monospace;
 	padding: 10px;
 	margin-bottom: 16px;
+	overflow-x: scroll;
 }
 /* Base */
 body {
@@ -90,11 +91,11 @@ small {
 
 .navbar-small .gravatar {
 	float: left;
-	margin: 1px 1px 1px 10px;
+	margin: 3px 1px 1px 10px;
 }
 .navicons {
 	text-align: center;
-	font-size: 1.0em;
+	font-size: 1.6em;
 	vertical-align: middle;
 	clear: both;
 	position: absolute;
@@ -102,9 +103,8 @@ small {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 85%;
+    margin: 0px 10px 0px 10px;
     height: 50%;
-    margin: auto;
 }
 
 nav {
