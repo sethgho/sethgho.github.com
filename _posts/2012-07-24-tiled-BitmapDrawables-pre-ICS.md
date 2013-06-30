@@ -9,13 +9,33 @@ comments: true
 published: true
 ---
 
-Trying to prettify an Android app with any kind of image assets has proven to be a bit of a challenge. I'm using the excellent [ActionBarSherlock](http://www.actionbarsherlock.com "I dont't get the name") to handle the ActionBar for OS versions prior to ICS. 
+<p>Trying to prettify an Android app with any kind of image assets has proven to be a bit of a challenge. I'm using the excellent <a href="http://www.actionbarsherlock.com" alt="I dont't get the name">ActionBarSherlock</a> to handle the ActionBar for OS versions prior to ICS. </p>
 
-It's certainly made life much easier, but styling it left me wanting. I tried setting the Action Bar's background to a tiled image drawable: 
-<script src="https://gist.github.com/3169855.js"> </script>
+<p>It's certainly made life much easier, but styling it left me wanting. I tried setting the Action Bar's background to a tiled image drawable: </p>
 
-But the repeating attribute seem to have not been recognized at all. According to [this bug report](http://code.google.com/p/android/issues/detail?id=15340 "Android bug? no!") it's a problem with pre-ICS Android. The tile mode must be set in code and is not supported in the XML declaration. Example:
+<pre class="prettyprint lang-xml">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;bitmap xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:src=&quot;@drawable/bg_stripe_tile&quot;
+    android:tileMode=&quot;repeat&quot; &gt;
+&lt;/bitmap&gt;</script>
+</pre>
 
-<script src="https://gist.github.com/3169765.js"> </script>
+<p>But the repeating attribute seem to have not been recognized at all. According to <a href="http://code.google.com/p/android/issues/detail?id=15340" alt="Android bug? no!">this bug report</a> it's a problem with pre-ICS Android. The tile mode must be set in code and is not supported in the XML declaration. Example: </p>
+
+<pre class="lang-java prettyprint">
+public class MyActivity extends Activity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+            BitmapDrawable bg = (BitmapDrawable)getResources().getDrawable(R.drawable.bg_striped);
+            bg.setTileModeXY(TileMode.REPEAT, TileMode.REPEAT);
+            getSupportActionBar().setBackgroundDrawable(bg);
+        }
+    }
+}
+</pre>
 
 If anyone knows a better way to handle this, I'd love to know. I'm growingly increasingly hesitant to add any images anywhere in an Android project if I can avoid it.

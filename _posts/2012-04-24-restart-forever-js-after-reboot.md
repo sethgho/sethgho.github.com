@@ -17,7 +17,16 @@ I fired it up yesterday and it worked like a champ. That is, of course, until my
 
 First create a shell script like this one (I called mine <em>app-starter.sh</em>):
 
-<script src="https://gist.github.com/37cc6850b0b2100de268.js"></script>
+<pre class="prettyprint lang-bash">
+#!/bin/sh
+ 
+if [ $(ps aux | grep $USER | grep node | grep -v grep | wc -l | tr -s "\n") -eq 0 ]
+then
+        export NODE_ENV=production
+        export PATH=/usr/local/bin:$PATH
+        forever start ~/example/app.js > /dev/null
+fi
+</pre>
 
 Then make the script executable:
 <pre class="brush:plain">chmod 700 ~/app-starter.sh</pre>
