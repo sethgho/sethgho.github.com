@@ -3,20 +3,7 @@ layout: default
 ---
 <article class="content">
 	{% include post_header.html %}
-    {{ content }}    
-    <div class="pagination">
-  {% if page.previous.url %}
-    <a href="/{{ page.previous.url }}" class="previous">PREVIOUS</a>
-  {% else %}
-    <!-- <span class="previous">PREVIOUS</span> -->
-  {% endif %}
-  
-  {% if page.next.url %}
-    <a href="/{{ page.next.url }}" class="next">NEXT</a>
-  {% else %}
-    <!-- <span class="next">NEXT</span> -->
-  {% endif %}
-</div>
+    {{ content }}
 </article>
 <div id="disqus_thread"></div>		
 <!-- 
