@@ -12,7 +12,7 @@ pre {
 }
 /* Base */
 body {
-	font-family: 'Roboto', Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 400;
@@ -34,8 +34,10 @@ a:hover {
 	color: #222;
 	text-decoration: underline;	
 }
+
 a {
-	color: #408892;
+	/*color: #408892;*/
+	color: #3a3a3a;
 	text-decoration: none;
 	font-weight: 500;	
 	line-height: 110%;
@@ -62,14 +64,8 @@ small {
 }
 
 /* Brand & Navigation */
-.header { 
-    border-bottom: 1px solid white;
-    padding-bottom: 10px;
- }
-
 .brand {
 	font-size: 1.5em;
-	color: #fff;
 	font-weight: 400;	
 	width: 100%;
 }
@@ -79,29 +75,23 @@ small {
 }
 
 .brand:hover {
-	text-decoration: none;
-	color: #eee;
+	text-decoration: none;	
 }
 
 .navbar-small a {
-	color: #fff;	
-	font-weight: 200;
+	vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .navbar-small a:hover {
 	text-decoration: none;	
 	text-shadow: none;
-	color: #fff;
 }
 
 .gravatar {
     float:  left;
-    margin-right: 6px;
-}
-
-.navbar-small .gravatar {
-	float: left;
-	margin: 3px 1px 1px 10px;
+    margin: 0 10px 10px 5px;
 }
 
 .navicons {
@@ -118,31 +108,29 @@ small {
     height: 50%;
 }
 
-nav {
-	background-color: #414141;
-}
 .navbar {
 	
 	float: left;
-	width: 200px;
-	padding: 6px 0 0 16px;
-	border-right: 3px solid #CCC;
+	width: 120px;
+	padding: 20px 0 0 16px;
+	/*border-right: 3px solid #CCC;*/
 	height: 100%;
 	position: fixed;
 }
 
 .navbar-small {	
-	font-size: 1.4em;
+	/*font-size: 1.4em;*/
 	height: 40px;
 	display: none;
 	padding-top: 2px;
 	position: relative;
+	border-bottom: 1px solid;
 }
 
 .navbar ul {
 	clear: left;
 	list-style-type: none;		
-	margin: 30px 16px 16px 0px;
+	margin: 0px 16px 16px 0px;
 }
 
 .navbar ul li {
@@ -156,22 +144,17 @@ p  {
 
 .navbar ul a {
 	font-size: 1.5em;
-	color: #fff;
+	/*color: #fff;*/
 	font-weight: 300;	
 	text-decoration: none;
 }
 
-.navbar ul a:hover{
-	color:#bbb;
-}
-
 .container {
-	margin: 0px 20px 40px 240px;
-	padding-top: 6px;
+	margin: 0px 20px 40px 150px;
+	padding-top: 20px;
 }
 
-article {
-	padding: 10px 0 0px 0;
+article {	
 	margin-bottom: 60px;
 	border-bottom: 1px dotted #777;
 }
@@ -180,13 +163,10 @@ article {
 	position: absolute;
 	width: 100%;
 	bottom: 0;
-	font-size: 2.5em;
+	font-size: 2.2em;
 	margin-bottom: 30px;
 }
 
-.social a {
-	color: #FFF;
-}
 .social a:hover {
 	text-decoration: none;	
 	color: #999;
