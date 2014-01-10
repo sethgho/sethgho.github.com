@@ -17,7 +17,7 @@ I fired it up yesterday and it worked like a champ. That is, of course, until my
 
 First create a shell script like this one (I called mine <em>app-starter.sh</em>):
 
-<pre class="prettyprint lang-bash">
+{% highlight bash linenos=table %}
 #!/bin/sh
  
 if [ $(ps aux | grep $USER | grep node | grep -v grep | wc -l | tr -s "\n") -eq 0 ]
@@ -26,12 +26,12 @@ then
         export PATH=/usr/local/bin:$PATH
         forever start ~/example/app.js > /dev/null
 fi
-</pre>
+{% endhighlight %}
 
 Then make the script executable:
-<pre class="brush:plain">chmod 700 ~/app-starter.sh</pre>
+{% highlight bash %}chmod 700 ~/app-starter.sh{% endhighlight %}
 Now make cron run the script when the system is rebooted. Add this to your crontab (via <em>crontab –e</em>):
-<pre class="brush:plain">@reboot ~/app-starter.sh &gt;&gt; cron.log 2&gt;&amp;1</pre>
+{% highlight bash %}@reboot ~/app-starter.sh &gt;&gt; cron.log 2&gt;&amp;1{% endhighlight %}
 For the uninitiated like myself, use<em> CTRL+K,X</em> to save.
 
 Thanks to Hack Sparrow for taking the time to share this.

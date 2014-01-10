@@ -13,24 +13,24 @@ Today I wanted to display static a ListView of properties and their values. Itâ€
 
 I found Mark Assad, who parsed the system layout files into <a href="http://sydney.edu.au/engineering/it/~massad/project-android.html" target="_blank">raw XML</a>. The led to the magic answer of <a href="http://developer.android.com/reference/android/widget/TwoLineListItem.html" target="_blank">TwoLineListItem</a> widget. Finding this widget allowed me to write a simple ArrayAdapter of key/value pairs.
 
-<pre class="prettyprint lang-java">
-	adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_2,list){
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent){
-            TwoLineListItem row;            
-            if(convertView == null){
-                LayoutInflater inflater = (LayoutInflater)getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                row = (TwoLineListItem)inflater.inflate(android.R.layout.simple_list_item_2, null);                    
-            }else{
-                row = (TwoLineListItem)convertView;
-            }
-            BasicNameValuePair data = list.get(position);
-            row.getText1().setText(data.getName());
-            row.getText2().setText(data.getValue());
- 
-            return row;
+{% highlight java linenos=table %}
+adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_2,list){
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent){
+        TwoLineListItem row;            
+        if(convertView == null){
+            LayoutInflater inflater = (LayoutInflater)getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            row = (TwoLineListItem)inflater.inflate(android.R.layout.simple_list_item_2, null);                    
+        }else{
+            row = (TwoLineListItem)convertView;
         }
-    };
+        BasicNameValuePair data = list.get(position);
+        row.getText1().setText(data.getName());
+        row.getText2().setText(data.getValue());
+
+        return row;
+    }
+};
 listView.setAdapter(adapter);
-</pre>
+{% endhighlight %}
 Hope this saves someone else some time, as I spent an embarrassing amount of time determined to use the simple_list_item_2 layout.

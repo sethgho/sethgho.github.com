@@ -4,6 +4,11 @@ ul,ol {
 	list-style-type: inherit;	
 	list-style-position: inside;
 }
+
+strong {
+	font-weight: 600;
+}
+
 pre {
 	font-family: monospace;
 	padding: 10px;
@@ -36,7 +41,6 @@ a:hover {
 }
 
 a {
-	/*color: #408892;*/
 	color: #3a3a3a;
 	text-decoration: none;
 	font-weight: 500;	
@@ -96,16 +100,6 @@ small {
 
 .navicons {
 	text-align: center;
-	font-size: 1.6em;
-	vertical-align: middle;
-	clear: both;
-	position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0px 10px 0px 10px;
-    height: 50%;
 }
 
 .navbar {
@@ -113,14 +107,13 @@ small {
 	float: left;
 	width: 120px;
 	padding: 20px 0 0 16px;
-	/*border-right: 3px solid #CCC;*/
 	height: 100%;
 	position: fixed;
 }
 
 .navbar-small {	
-	/*font-size: 1.4em;*/
-	height: 40px;
+	font-size: 1.4em;
+	height: 32px;
 	display: none;
 	padding-top: 2px;
 	position: relative;
@@ -142,21 +135,28 @@ p  {
 	line-height: 1.4em;
 }
 
+ul {
+	margin: 4px 0 16px 0;
+}
+
 .navbar ul a {
 	font-size: 1.5em;
-	/*color: #fff;*/
 	font-weight: 300;	
 	text-decoration: none;
 }
 
 .container {
-	margin: 0px 20px 40px 150px;
+	margin: 0px 150px 40px 150px;
 	padding-top: 20px;
 }
 
 article {	
 	margin-bottom: 60px;
 	border-bottom: 1px dotted #777;
+}
+
+article img {
+	max-width: 100%;
 }
 
 .social {
@@ -280,7 +280,19 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
-/* Styles */
+
+	h1 { font-size: 1.8em; }
+	h2 { font-size: 1.3em; }
+	h3 { font-size: .97em; }
+	h5 { font-size: .63em; }
+	h6 { font-size: .55em; }
+	.navicons {
+		font-size: 1.0em;
+	}
+
+	.gravatar {
+		display: none;
+	}
 }
 
 /* iPads (portrait and landscape) ----------- */
