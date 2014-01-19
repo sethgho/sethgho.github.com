@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Cut the Cord: Debug Android Wirelessly
+title: Cut the Cord - Debug Android Wirelessly
 tags:
   - android
   - adb
 comments: true
+published: true
 ---
 
 This is one of those "I've wanted it for so long I really don't want to forget this" posts. I'm taking a cue from [Scott Hanselman](http://www.hanselman.com) and writing a quick blog post about it so I remember.
