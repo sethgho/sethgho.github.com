@@ -252,3 +252,12 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+/* Material Blue */
+.theme-base-0mb .sidebar {
+  background-color: #3E2723;
+}
+.theme-base-0mb .content a,
+.theme-base-0mb .related-posts li a:hover {
+  color: #795548;
+}
