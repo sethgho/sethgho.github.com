@@ -13,7 +13,7 @@ Today I wanted to display static a ListView of properties and their values. Itâ€
 
 I found Mark Assad, who parsed the system layout files into <a href="http://sydney.edu.au/engineering/it/~massad/project-android.html" target="_blank">raw XML</a>. The led to the magic answer of <a href="http://developer.android.com/reference/android/widget/TwoLineListItem.html" target="_blank">TwoLineListItem</a> widget. Finding this widget allowed me to write a simple ArrayAdapter of key/value pairs.
 
-{% highlight java linenos=table %}
+```java
 adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_2,list){
     @Override
     public View getView(int position, View convertView, ViewGroup parent){
@@ -32,5 +32,6 @@ adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_2,list){
     }
 };
 listView.setAdapter(adapter);
-{% endhighlight %}
+```
+
 Hope this saves someone else some time, as I spent an embarrassing amount of time determined to use the simple_list_item_2 layout.

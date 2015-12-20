@@ -17,7 +17,7 @@ I fired it up yesterday and it worked like a champ. That is, of course, until my
 
 First create a shell script like this one (I called mine <em>app-starter.sh</em>):
 
-{% highlight bash linenos=table %}
+```bash
 #!/bin/sh
  
 if [ $(ps aux | grep $USER | grep node | grep -v grep | wc -l | tr -s "\n") -eq 0 ]
@@ -26,7 +26,7 @@ then
         export PATH=/usr/local/bin:$PATH
         forever start ~/example/app.js > /dev/null
 fi
-{% endhighlight %}
+```
 
 Then make the script executable:
 {% highlight bash %}chmod 700 ~/app-starter.sh{% endhighlight %}

@@ -261,3 +261,17 @@ a.sidebar-nav-item:focus {
 .theme-base-0mb .related-posts li a:hover {
   color: #795548;
 }
+
+/* Force code snippets to not wrap and horizontally scroll */
+.highlight pre code * {
+  white-space: nowrap;   
+}
+
+.highlight pre {
+  overflow-x: auto;       
+}
+
+.highlight pre code {
+  white-space: pre;      
+}
+/* End code snippet styling */

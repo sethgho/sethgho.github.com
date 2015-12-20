@@ -13,30 +13,31 @@ published: true
 Cocoa is incredibly verbose. While this can make reading it self explanatory, it can also make writing it laborious. Even with code completion, I still find myself having to look up the documentation just to remember what I even need to code complete. It doesn't matter how many times I wire up a UITableView data source & delegate, I can never remember it all. 
 
 I mean, who wants to type (or copy & paste) this every time:
-{% highlight objectivec linenos=table %}
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	NSString *identifier = @"myCell";
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell)
-    {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }    
-    cell.textLabel.text = @"Cell";    
-    return cell;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 0;
-}
+```objectivec
+    - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+        NSString *identifier = @"myCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        if (!cell)
+        {
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        }    
+        cell.textLabel.text = @"Cell";    
+        return cell;
+    }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return 0;
-}
+    - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+        return 0;
+    }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	return @"Header";
-}
-{% endhighlight %}
+    - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+        return 0;
+    }
+
+    - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+        return @"Header";
+    }
+```
 
 
 Cue [Xcode Snippets](https://developer.apple.com/library/ios/recipes/xcode_help-source_editor/CreatingaCustomCodeSnippet/CreatingaCustomCodeSnippet.html)! 
@@ -57,7 +58,8 @@ Because they save time. Sometimes they save lots of time. I'm personally not one
 It takes time to get into the habit of using them. Defining them is easy, but using them is often hard to remember. Generally, I double check my list of snippets once every couple of months. If I don't use them, it's generally because they're not long enough to save me much time so they go into the garbage.
 
 One of my favorite snippets (because I can never seem to remember it): Singleton using GCD
-{% highlight objectivec linenos=table %}
+
+```objectivec
 + (instancetype)shared<#name#> {
     static <#class#> *_shared<#name#> = nil;
     static dispatch_once_t onceToken;
@@ -67,7 +69,7 @@ One of my favorite snippets (because I can never seem to remember it): Singleton
     
     return _shared<#name#>;
 }
-{% endhighlight %}
+```
 
 
 ##Now Go Curate and Save Them
@@ -75,22 +77,22 @@ If you start spending time refining your user defined snippets and really begin 
 
 As of Xcode 4/5, they reside here: 
  
-{% highlight bash %}
+```bash
 ~/Library/Developer/Xcode/UserData/CodeSnippets
-{% endhighlight %}
+```
 
 Unfortunately, the file names are not very friendly - they're GUIDs. I've seen some [manual solutions](https://github.com/brennanMKE/XcodeCodeSnippets) for "installing" snippets from human readable files, but I really just need a personal backup of these snippets. Friendly named or readable files would be great for public discoverability, though. 
 
 ##Where to Start?
 Have your own code snippets?
 
-{% highlight bash linenos=table %}
+```bash
  cd ~/Library/Developer/Xcode/UserData/CodeSnippets
  git init
  git commit -a -m "Initial commit"
 
  *setup your remote repo*
  git push origin master
-{% endhighlight %}
+```
 
 Need some snippets to start with? You could [try mine](https://github.com/sethgho/xcode-snippets), which are largely derived from [Matt Thompson's](https://github.com/mattt/Xcode-Snippets).
