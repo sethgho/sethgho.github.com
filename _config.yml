@@ -1,7 +1,26 @@
-auto: true
-markdown: rdiscount
+markdown:         redcarpet
+highlighter:      pygments
+
 pygments: true
-paginate: 3
-paginate_path: ":num"
+
+
+# Setup
+title:            'Seth Gholson'
+tagline:          'A developer'
+description:      'Software dev in Austin, TX focused on Android'
+baseurl:          /
+
+author:           'sethgho@gmail.com'
+name:           'Seth Gholson'
+url:            'http://www.sethgholson.com'
+  
+# Permalinks
 permalink: /:year/:month/:title
-url: http://www.sethgholson.com
+paginate:         3
+paginate_path: ":num"
+auto: true
+
+twitter:          http://twitter.com/sethgho
+github:
+  repo:           https://github.com/sethgho
+gravatar:         'd704ea2a2f1bb79d9719b451505e7b3d'
