@@ -9,6 +9,7 @@ tags:
   - google
   - google-reader
 comments: true
+published: false
 ---
 
 In an effort to simplify life and centralize my scattered points of communication, I’m consolidating my email addresses. I currently have:

@@ -7,6 +7,7 @@ tags:
   - iographica
   - mouse-path
 comments: true
+published: false
 ---
 
 <a href="/assets/img/iographica1.png"><img style="float: right" title="IOGraphica - 4.3 hours (from 8-18 to 13-09)" src="/assets/img/iographica1.png" border="0" alt="IOGraphica - 4.3 hours (from 8-18 to 13-09)" width="558" height="203" /></a>

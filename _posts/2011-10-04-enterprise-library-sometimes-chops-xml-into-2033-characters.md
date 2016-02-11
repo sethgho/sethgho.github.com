@@ -8,7 +8,7 @@ tags:
   - xml
 category: Coding
 comments: true
-
+published: false
 ---
 
 This morning I began what I thought would be an uneventful task in .NET: connect to one database, download as XML some rows from a table that have changed since a given time, then pass that XML to a stored procedure in another database so that the changes can be merged. Just two tables: one relatively small, the other just a 2-column relationship table for the first table. Here’s a contrived snippet to serve the same purpose:
