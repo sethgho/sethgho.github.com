@@ -5,7 +5,7 @@ name: Build & Deploy to Github Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,12 +36,10 @@ jobs:
           cache-dependency-path: ${{ env.BUILD_PATH }}/package-lock.json
       - name: Install & Build
         run: npm install && npm run build      
-      - name: Troubleshooting
-        run: ls public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: public
+          path: src
 
   # Deployment job
   deploy:
