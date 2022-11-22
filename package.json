@@ -1,0 +1,19 @@
+{
+  "name": "sethgholson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss build -i main.css -o src/style.css",
+    "dev": "npx tailwindcss build -i main.css -o src/style.css -w",
+    "prod": "NODE_ENV=production npx tailwindcss build -i main.css -o src/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4"
+  }
+}
